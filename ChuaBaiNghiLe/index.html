@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập</title>
+</head>
+<body>
+
+<!--<input type="text" id="a" placeholder="Nhập link ảnh">-->
+<!--<button onclick="getData()">Nhấn</button>-->
+
+<!--<h1 id="kq"></h1>-->
+<!--<img src="" alt="" id="anh">-->
+<!--<a href="" id="link">Nhấn</a>-->
+
+<div id="kq">
+</div>
+
+<script>
+
+    // Nhập vào N từ prompt. In ra N lần chữ 'Hello' vào 1 thẻ div có id = kq
+    // 1. Hello
+    // 2. Hello
+    // 3. Hello
+    // ....
+    let n = +prompt("Nhập vào n: ");
+    let html = '';
+    for (let i = 1; i <= n; i++) {
+        html = html + '<h5>' + i + '. Hello' + '</h5>'
+    }
+    document.getElementById("kq").innerHTML = html;
+
+
+    // Nhập vào đường dẫn cho biến src, in ra ảnh với nguồn ảnh là biến src
+    /*
+    function getData() {
+        let link = document.getElementById("a").value;
+        document.getElementById("anh").src = link;
+    }
+
+     */
+
+    //B1: cách khai báo biến
+    // let, var, const: Tu khoa de khai bao bien
+    /*
+    let a = 10;
+    let b = 20;
+    let c = "Hello";
+    const PI = 3.14;
+    // có mấy kiểu dữ liệu: number (0; 1; 1,4; 2..), string( 'Linh', "Linh", `Linh`), boolean (true / false), object
+    let isSick = true;
+    let obj = {
+        name: "Trương Đăng Vũ Linh"
+    };
+    let d = null; // Không có gì;
+    let e = undefined; // Không xác định
+    // làm sao để quy định kiểu dữ liệu cho 1 biến :  // Xác định dựa trên du liệu cuối cùng mà biến đó sử dụng
+    let name = "VŨ Linh";
+    name = 1;
+    console.log(typeof name);
+
+     */
+
+    // có những cách nào để hiển thị chữ hello ra
+    /*
+    alert("Hello");
+    document.write("Hello");
+    document.getElementById("kq").innerHTML = "Linh is handsome";
+    console.log("Hello");
+     */
+
+
+    // có những cách nào để nhập vào biến a
+    /*
+    let a = prompt("Nhập vào đi: ");
+
+    function getData() { // Như 1 hành động tự định nghĩa và sẽ được gọi khi người dùng thực hiện 1 hành đôộng nào đó trên HTML
+        let name = document.getElementById("a").value;
+        document.write(name);
+    }
+     */
+
+    // in ra thẻ h1, img, a với JS
+    // document.getElementById("anh").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8DgGG_ultj6QONsvFbtf0aXfjbB8ROTxDMGd9vBZPRg&s";
+    // document.getElementById("link").href = "https://www.facebook.com/vulinh1234567/";
+
+
+    // Nhập vào tên, in ra tên
+    // Nhập vào a, in ra bình phương của a
+    /*
+    let a = +prompt("Nhập a: ")
+    console.log(a * a);
+    console.log(Math.pow(a, 2));
+
+     */
+    // Nhập vào tên, in ra tên với h1
+
+
+    // Nhập vào tuổi trong biến age, in ra 'Đủ tuổi' nếu age > 18
+    /*
+    let age = +prompt('Nhập tuổi: ');
+    if(age > 18) {
+        alert("Đủ tuổi");
+    }
+
+     */
+
+    // Nhập và a, in ra 'Hello' nếu a chẵn, 'Hi' nếu a lẻ
+    /*
+    let a = +prompt("Nhập vào số: ");
+    if(a % 2 === 0) {
+        alert("Hello");
+    } else {
+        alert("Hi");
+    }
+
+     */
+    // Nhập vào a, b. Nếu a > b in ra tổng, nếu a < b in ra tích, nếu a = b in ra 'Hihi'
+    /*
+    let a = +prompt("Nhập a: ");
+    let b = +prompt("Nhập b: ");
+    if (a > b) {
+        let tong = a + b;
+        alert("Tong là: " + tong);
+    } else if (a < b) {
+        let tich = a * b;
+        alert("Tích là: " + tich)
+    } else if (a === b) {
+        alert("Hi hi");
+    }
+
+     */
+
+    // Nhập a,b,c. In ra số lớn nhất
+    /*
+    let a = +prompt("Nhập a"); // 10
+    let b = +prompt("Nhập b"); // 8
+    let c = +prompt("Nhập c"); // 6
+    let max = a; // max = 10
+    if (max < b) { // 10 < 8
+        max = b;
+    }
+    if (max < c) { // 10 < 6
+        max = c;
+    }
+    alert("Số lớn nhất là : " + max); // 10
+
+     */
+    // In ra 100 chữ 'Hello'
+    // fori + tab
+
+
+
+
+
+   
+</script>
+</body>
+</html>

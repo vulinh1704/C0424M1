@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cấu trúc điều kiện</title>
+</head>
+<body>
+
+
+<script>
+    /*
+    let a = +prompt("Nhập số a: ");
+    let b = +prompt("Nhập số b: ");
+    if(b === 0) {
+        alert("Mẫu số phải khác 0");
+    } else {
+        if(a % b === 0) {
+            alert(a + " chia hết cho " + b);
+        } else {
+            alert(a + " không chia hết cho " + b);
+        }
+    }
+
+     */
+
+    /*
+    let age = +prompt("Nhập tuổi: ");
+    if(age < 16) {
+        alert("Không đủ tuổi vào lớp 10");
+    } else {
+        alert("Đủ tuổi vào lớp 10");
+    }
+
+     */
+
+
+    // let a = +prompt("Nhập a: "); // 4
+    // let b = +prompt("Nhập b: "); // 6
+    // let c = +prompt("Nhập c: "); // 2
+    // let max = a; // max = 4
+    // if (max < b) {  // 4 < 6
+    //     max = b; // max = 6
+    // }
+    // if (max < c) {
+    //     max = c;
+    // }
+    // alert(max);
+
+
+    /*
+    if (a > b) {
+        if (a > c) {
+            alert("a lớn nhất")
+        }
+    }
+
+    if (b > a) {
+        if (b > c) {
+            alert("b lớn nhất")
+        }
+    }
+    if (c > b) {
+        if (c > a) {
+            alert("c lớn nhât")
+        }
+    }
+
+     */
+
+
+
+    // let diemKiemTra = +prompt("Nhập điểm kiểm tra: ");
+    // let diemGiuaKy = +prompt("Nhập điểm giữa kỳ: ");
+    // let diemCuoiKy = +prompt("Nhập điểm cuối kỳ: ");
+    // let diemTb = (diemCuoiKy + diemGiuaKy + diemKiemTra) / 3; // ||
+    // if (diemTb >= 50) {
+    //     alert("Đạt")
+    // } else { // điểm < 50
+    //     alert("Không đạt")
+    // }
+
+    // if(diemTb <= 100 && diemTb >= 90) {
+    //     alert("Giỏi")
+    // } else if (diemTb >= 70 && diemTb <= 89) {
+    //     alert("Khá")
+    // } else if(diemTb >= 50 && diemTb <= 69) {
+    //     alert("Trung binh")
+    // } else if (diemTb <= 49 && diemTb >= 0) {
+    //     alert("Yếu")
+    // } else {
+    //     alert("Không có điểm này!")
+    // }
+
+    // let a = +prompt("Nhập a : ");
+    // if (a >= 4 && a <= 9) {
+    //     alert("a nằm trong khoảng 4 đến 9")
+    // }
+    //
+    // if (a >= 4) {
+    //     if (a <= 9) {
+    //         alert("a nằm trong khoảng 4 đến 9")
+    //     }
+    // }
+
+    /*
+    let a = +prompt("Nhập a : ");
+    if(a < 0 || a > 10) { // 3
+        alert("a không thuoc khoang 0 - 10")
+    }
+    if(a < 0) {
+        alert("a nhỏ hơn 0")
+    }
+    if(a > 10) {
+        alert("a > 10")
+    }
+     */
+
+    let thu = +prompt("Nhập vào thứ: ") // 2
+    switch (thu) { // thu = 2
+        case 1: // thu === 1 (2 === 1)
+            alert("Chủ nhật") // Nếu k có break thì khi vào được điều kiên đúng nó sẽ thực hiện các đoạn code bên dưới đến khi break hoặc kết thức switch-case
+            break;
+        case 2: // thu === 2 (2 === 2)
+            alert("Thứ Hai");
+            break;
+        case 3:
+            alert("Thứ 3");
+            break;
+        default:
+            alert("Ko có thứ này")
+    }
+
+</script>
+</body>
+</html>

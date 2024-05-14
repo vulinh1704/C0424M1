@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+<script>
+    // Hàm thì có thể có tham số truyền vào
+    // function showHello(a) { // a: Tham số truyền: là biến đại diện cho dữ liệu truyền vào ham
+    //     a = a + " Perfect";
+    //     alert(a);
+    // }
+    //
+    // showHello("C04") // "C04" là đối số: dữ liệu truyền vào hàm
+
+    // function getSum(a, b, c) {
+    //     return a + b + c;
+    // }
+    //
+    // function getAvg(a, b, c, e) { // tham số
+    //     let sum = getSum(1, 5, 7); // 2 , 4, 5
+    //     let avg = sum / 3;
+    //     return avg;
+    // }
+    //
+    // let d = getAvg(2, 4, 5, "Hello"); // đối số
+    // alert(d);
+
+    // function getHello() {
+    //     while (true) {
+    //         return "Hello"; // Khi gặp từ khóa return, ngay lập dừng hàm và thoát khỏi hàm
+    //     }
+    // }
+    // getHello();
+
+    // Bài 1: Viết hàm TRẢ VỀ bình phương của MỘT số bất kỳ được ĐƯA VÀO. Gọi hàm vừa xây dựng được.
+    // function getSquare(a) {
+    //     let s = Math.pow(a, 2); // <=> a ^ 2
+    //     return s;
+    // }
+    //
+    // alert(getSquare(10));
+
+    // function getArea(r) {
+    //     let S = Math.PI * Math.pow(r, 2);
+    //     S = Math.round(S);
+    //     return S;
+    // }
+    // alert(getArea(10));
+    /*
+
+    function getFactorial(a) { // 6
+        let tich = 1;
+        for (let i = a; i > 0; i--) {
+            tich = tich * i;
+        }
+        return tich;
+    }
+    alert(getFactorial(6));
+
+     */
+
+    /*
+    function getSum(a , b , c) {
+        let sum = a + b + c;
+        return sum;
+    }
+    alert(getSum(1, 4, 6));
+
+     */
+
+    /*
+    function check(number) {
+        if(number > 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    alert(check(-10))
+
+     */
+
+
+    function getSum(arr) { // arr = [1, 5, 12, 11, 10]
+        let sum = 0;
+        for (let i = 0; i < arr.length; i++) {  // i = 3
+            if(arr[i] > 10) { // arr[i] <=> arr[3] = (11)
+                sum = sum + arr[i];  // sum = 12 + 11 = 23
+            }
+        }
+        return sum;
+    }
+
+
+    function getCount(arr) {
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if(arr[i] > 10) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    function getAvg(arr) {
+        let avg = getSum(arr) / getCount(arr);
+        return avg;
+    }
+
+
+    let array = [];
+    let soLuongPhanTu = +prompt("Nhập sô lượng phần tử mảng: ");
+
+    for (let i = 0; i < soLuongPhanTu; i++) {
+        let phanTu = +prompt("Nhập phần thứ " + i);
+        array.push(phanTu);
+    }
+
+    alert(getAvg(array));
+    // alert(getCount(array));
+
+    // alert(getSum(array));
+
+
+    // arr = [5, 6, 7, 10, 21]
+    // index  0  1  2  3   4
+    // length = 5
+    // phần tử: arr[2] = 7
+
+    // chỉ số(index): bắt đầu từ 0
+    // length: số lượng các phần tử
+    // phần tử: giá trị nằm tại vị trí nào đó trong mảng
+
+    /*
+    let arr = [];
+    let soLuongPhanTu = +prompt("Nhập sô lượng phần tử mảng: ");
+
+    for (let i = 0; i < soLuongPhanTu; i++) {
+        let phanTu = +prompt("Nhập phần thứ " + i);
+        arr.push(phanTu);
+    }
+    console.log(arr);
+
+     */
+
+</script>
+</body>
+</html>

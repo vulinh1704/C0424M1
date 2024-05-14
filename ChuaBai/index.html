@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    <!--    -->
+    //    let a = +prompt("Nhập cạnh a: ");
+    //    let b = +prompt("Nhập cạnh b: ");
+    //    let c = +prompt("Nhập cạnh c: ");
+    //
+    //    /*
+    //    if (a > 0 && b > 0 && c > 0) {
+    //        if (a + b > c && b + c > a && c + a > b) {
+    //            alert("3 cạnh đủ điều kiện là 3 cạnh của tam giác!")
+    //        }
+    //    }
+    //
+    //     */
+    //
+    //
+    //    if (a > 0 && b > 0 && c > 0 && a + b > c && b + c > a && c + a > b) {
+    //        alert("3 cạnh đủ điều kiện là 3 cạnh của tam giác!")
+    //    } else {
+    //        alert("Không đủ điều kiện")
+    //     }
+
+
+    // Bài 1
+    // let doC = +prompt("Nhap do C: ")
+    // let doF = doC * 9 / 5 + 32;
+    // alert("Độ F là: " + doF);
+
+    /*
+    // Bài 3 : Diện tích hình vuông a bình
+    let a = +prompt("Nhập a: ");
+    // let S = a * a;
+    let S = Math.pow(a, 2); // a mũ 2
+    alert("Diện tích hình vuông là: " + S);
+     */
+
+    // Bài 5: S = 1/2 * a * b (a, b là 2 cạnh kề của tam giác vuông);
+
+    // Bài 6: ax + b = 0; => x = -b / a;
+    /*
+    alert("Ta có ax + b = 0");
+    let a = +prompt("Nhập a: ");
+    let b = +prompt("Nhập b: ");
+    if (a === 0) {
+        if (b === 0) {
+            alert("Phương trình vô so nghiẹm")
+        } else {
+            alert("Phương trình vô nghiệm;")
+        }
+    } else {
+        let x = -b / a;
+        alert("Nhiệm là: " + x);
+    }
+
+     */
+
+
+    alert("Ta có phương trình ax^2 + bx + c = 0: ");
+    let a = +prompt("Nhập a: ");
+    let b = +prompt("Nhập b: ");
+    let c = +prompt("Nhập c: ");
+
+    let delta = Math.pow(b, 2) - 4 * a * c;
+    if (delta < 0) {
+        alert("Phương trình vo nghiem")
+    } else if (delta === 0) {
+        let x = -b / (2 * a);
+        alert("Phuong trinh nghiem kep la x1 = x2 = " + x);
+    } else {
+        let x1 = (-b + Math.pow(delta, 1 / 2)) / (2 * a);
+        let x2 = (-b - Math.sqrt(delta)) / (2 * a); // Math.sqrt thay cho phép căn bậc 2
+        alert("Phương trình có 2 nghiệm là: x1 = " + x1 + " | x2 = " + x2);
+    }
+
+</script>
+</body>
+</html>
